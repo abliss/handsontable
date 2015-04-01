@@ -1,12 +1,12 @@
 /*!
- * Handsontable 0.12.6
+ * Handsontable 0.12.6-abliss
  * Handsontable is a JavaScript library for editable tables with basic copy-paste compatibility with Excel and Google Docs
  *
  * Copyright 2012-2015 Marcin Warpechowski
  * Licensed under the MIT license.
  * http://handsontable.com/
  *
- * Date: Thu Feb 19 2015 14:25:57 GMT+0100 (CET)
+ * Date: Wed Apr 01 2015 23:58:56 GMT+0000 (UTC)
  */
 /*jslint white: true, browser: true, plusplus: true, indent: 4, maxerr: 50 */
 
@@ -2396,7 +2396,7 @@ Handsontable.Core = function (rootElement, userSettings) {
   /**
    * Handsontable version
    */
-  this.version = '0.12.6'; //inserted by grunt from package.json
+  this.version = '0.12.6-abliss'; //inserted by grunt from package.json
 };
 
 var DefaultSettings = function () {};
@@ -7130,7 +7130,6 @@ Handsontable.helper.isWebComponent = function (element) {
     var that = this;
 
     choicesListHot.updateSettings({
-      'colWidths': [Handsontable.Dom.outerWidth(this.TEXTAREA) - 2],
       afterRenderer: function (TD, row, col, prop, value) {
         var caseSensitive = this.getCellMeta(row, col).filteringCaseSensitive === true;
 
